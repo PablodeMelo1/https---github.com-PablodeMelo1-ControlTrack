@@ -1,0 +1,74 @@
+/* carga de fuentes */
+:root{
+  --primario: #36A59F;
+  --secundario: #68C4B4;
+  --claro: #8ACBC7;
+}
+
+@font-face {
+   font-family: "Lato";
+   src: url(../fonts/Lato-Light.ttf);
+ }
+
+@font-face {
+   font-family: "Quicksand";
+   src: url(../fonts/Quicksand-SemiBold.ttf);
+}
+
+/* Cominezo con mis estilos */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+/*Declaracion de botones*/
+.btn-negro{
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  font-family: "Quicksand";
+}
+.btn-negro:hover{
+  color:var(--primario)
+}
+
+.btn-slider{
+  padding: 10px;
+  color: #FFFFFF;
+  margin: 0px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid #FFFFFF;
+  font-family: "Quicksand";
+}
+.btn-slider:hover{
+  padding: 10px;
+  color: #FFFFFF;
+  box-shadow: var(--primario) 5px 5px, var(--claro) 10px 10px, var(--secundario) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  margin: 0px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid #FFFFFF;
+  font-family: "Quicksand";
+}
+
+/*Declaracion de elementos del carrusel*/
+
+.carousel-item {
+  height: 320px; /* Altura completa de la pantalla */
+
+}
+h2{
+  font-size: 60px;
+}
+.carousel-item img {
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+  height: 100%;
+  width: 100%;
+}
+#nosotros{
+  margin: 0 auto;
+}
+
+
