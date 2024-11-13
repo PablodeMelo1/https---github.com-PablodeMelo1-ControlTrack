@@ -8,18 +8,11 @@
     <meta name="description" content="La mejor tienda del planeta, podras comprar tanto online como en la tienda fisica">
     <meta name="author" content="Pablo de Melo">
     <title>ControlTrack</title>
-
-    <!-- Enlaces a CSS -->
-    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- MI propio CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-
-    <!-- Enlaces a JS -->
-    <!-- JS de Bootstrap -->
     <script src="js/bootstrap.bundle.js"></script>
-    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <link rel="icon" href="img/logo.png">
+
 
 </head>
 
@@ -51,7 +44,7 @@
                 <div class="carousel-caption text-md-start d-block ">
                     <h1 class="mb-4">NOSOTROS</h1>
                     <h5 class="mb-4">Soluciones Integrales</h5>
-                    <a class="btn btn-slider" href="#nosotros">CONOCENOS</a>
+                        
                 </div>
             </div>
             <!-- Imagen 2 -->
@@ -76,7 +69,7 @@
             <div class="carousel-item">
                 <img src="img/satelite1.jpg" class="img-fluid" alt="Imagen 4">
                 <div class="carousel-caption text-md-start d-block">
-                    <h1 class="mb-4">Contactanos</h1>
+                    <h1 class="mb-4">CONTACTANOS</h1>
                     <a class="btn btn-slider" href="#contacto">MÁS INFORMACION</a>
                 </div>
             </div>
@@ -104,19 +97,84 @@
         </div>
     </section>
 
-    <section id="tecnologia" class="container-fluid col-xl-6">
-        <div class="row align-content-center text-center my-5">
-            <h3>TECNOLOGÍA</h3>
-            <p><br>Localizador GPS 4G de última generación para la seguridad y control de flotas, o vehículos particulares. Gracias a la mayor cantidad de antenas 4G y LTE  puede realizar el monitoreo del vehículo sin ningún tipo de pérdida de señal, las 24 horas, desde cualquier Smartphone (APP) o plataforma web.</p>
-            <p><br>Es un sistema de rastreo satelital que permite saber la ubicación en tiempo real de la flota vehicular de la empresa, mejorando así la seguridad y optimizando la productividad de la misma.</p>
+    <section id="tecnologia" class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col py-5">
+                <h3>TECNOLOGÍA</h3>
+                <article>
+                    <p>Localizador GPS 4G de última generación para la seguridad y control de flotas, o vehículos particulares.
+                         Gracias a la mayor cantidad de antenas 4G y LTE puede realizar el monitoreo del vehículo sin ningún tipo 
+                         de pérdida de señal, las 24 horas, desde cualquier Smartphone (APP) o plataforma web.
+                        </p>
+                </article>
+            </div>
+
+            <div class="side1 col d-none d-md-block"></div>
+
+            <div class="side2 col d-none d-md-block"></div>
+
+            <article class="col py-5">
+                <p>Es un sistema de rastreo satelital que permite saber la ubicación en tiempo real de la flota vehicular de 
+                    la empresa, mejorando así la seguridad y optimizando la productividad de la misma.</p>
+
+                <a href="#gestion" class="btn btn-sliderSec">Conocer más</a>
+            </article>
+
+
         </div>
+
     </section>
 
-    <section id="beneficios" class="container-fluid col-xl-6">
+    <!-- <section id="beneficios" class="container-fluid col-xl-6">
         <div class="row align-content-center text-center my-5">
             <h3>BENEFICIOS</h3>
             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dolore obcaecati commodi ducimus voluptates repellat, provident enim deleniti qui, dolor adipisci velit exercitationem ea doloribus modi id veniam vel! Fuga!</p>
+        </div>
+    </section> -->
 
+    <section id="beneficios" class="container my-5">
+        <h3 class="text-center mb-4">CONOCE NUESTROS BENEFICIOS</h2>
+        <div class="row justify-content-center">
+            <!-- Beneficio 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="beneficioTarjeta">
+                    <div class="beneficioIcono">📍</div>
+                    <div class="beneficioTitulo">Monitoreo GPS en tiempo real</div>
+                    <p class="beneficioTexto">Desde app móvil y plataforma web, con oficina 24/7.</p>
+                </div>
+            </div>
+            <!-- Beneficio 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="beneficioTarjeta">
+                    <div class="beneficioIcono">📈</div>
+                    <div class="beneficioTitulo">Registros detallados</div>
+                    <p class="beneficioTexto">Recorridos, velocidades, kilometrajes, y más.</p>
+                </div>
+            </div>
+            <!-- Beneficio 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="beneficioTarjeta">
+                    <div class="beneficioIcono">📡</div>
+                    <div class="beneficioTitulo">Aparato de marca propia</div>
+                    <p class="beneficioTexto">Buena señal en zonas urbanas y rurales.</p>
+                </div>
+            </div>
+            <!-- Beneficio 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="beneficioTarjeta">
+                    <div class="beneficioIcono">🔋</div>
+                    <div class="beneficioTitulo">Batería autónoma de respaldo</div>
+                    <p class="beneficioTexto">Para funcionamiento GPS continuo.</p>
+                </div>
+            </div>
+            <!-- Beneficio 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="beneficioTarjeta">
+                    <div class="beneficioIcono">📱</div>
+                    <div class="beneficioTitulo">Acceso desde varios dispositivos</div>
+                    <p class="beneficioTexto">Seguimiento desde más de un celular.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -132,9 +190,16 @@
         <div class="row align-content-center text-center my-5">
             <h3>CONTACTO</h3>
             <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dolore obcaecati commodi ducimus voluptates repellat, provident enim deleniti qui, dolor adipisci velit exercitationem ea doloribus modi id veniam vel! Fuga!</p>
-
         </div>
     </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <a href=""><img src="img/facebook.png" alt=""></a>
+            <a href=""><img src="img/instagram.png" alt=""></a>
+            <a href=""><img src="img/twitter.png" alt=""></a>
+        </div>
+    </footer>
         
 
 </body>

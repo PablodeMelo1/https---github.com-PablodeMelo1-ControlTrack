@@ -5,6 +5,7 @@
   --claro: #8ACBC7;
 }
 
+
 @font-face {
    font-family: "Lato";
    src: url(../fonts/Lato-Light.ttf);
@@ -15,12 +16,18 @@
    src: url(../fonts/Quicksand-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: "Roboto";
+   src: url(../fonts/RobotoCondensed-Black.ttf);
+}
+
 /* Cominezo con mis estilos */
 
 html, body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /*Declaracion de botones*/
 .btn-negro{
@@ -42,6 +49,7 @@ html, body {
   border: 2px solid #FFFFFF;
   font-family: "Quicksand";
 }
+
 .btn-slider:hover{
   padding: 10px;
   color: #FFFFFF;
@@ -53,6 +61,27 @@ html, body {
   font-family: "Quicksand";
 }
 
+.btn-sliderSec{
+  padding: 10px;
+  color: black;
+  margin: 0px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid black;
+  font-family: "Quicksand";
+}
+
+.btn-sliderSec:hover{
+  padding: 10px;
+  color: black;
+  box-shadow: var(--primario) 5px 5px, var(--claro) 10px 10px, var(--secundario) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  margin: 0px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid black;
+  font-family: "Quicksand";
+}
+
 /*Declaracion de elementos del carrusel*/
 
 .carousel-item {
@@ -61,6 +90,13 @@ html, body {
 }
 h2{
   font-size: 60px;
+  font-family: "Roboto";
+}
+h3{
+  font-family: "Roboto";
+}
+h4, h5, p{
+  font-family: "Quicksand";
 }
 .carousel-item img {
   object-fit: cover; /* Ajusta la imagen sin distorsionarla */
@@ -72,3 +108,59 @@ h2{
 }
 
 
+/* pruebas */
+#tecnologia {
+  background-color: #c9d3d9;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: black;
+}
+
+#tecnologia > div {
+  min-height: 70vh;
+}
+
+#tecnologia > div > div, #tecnologia article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.side1 {
+  background: url(../img/side1.png) no-repeat center center;
+  background-size: cover;
+}
+
+.side2 {
+  background: url(../img/side2.png) no-repeat center center;
+  background-size: cover;
+}
+
+
+/* beneficios */
+.beneficioTarjeta{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.beneficioIcono{
+  font-size: 40px;
+  color: #007bff;
+}
+
+.beneficioTitulo {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.beneficioTexto{
+  margin-top: 10px;
+  font-size: 16px;
+}
